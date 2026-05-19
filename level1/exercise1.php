@@ -1,9 +1,9 @@
 <?php
 class employee {
-    public $name;
-    public $salary;
+    public string $name;
+    public float $salary;
 
-    public function setEmployee($name, $salary) {
+    public function setEmployee(string $name, float $salary) {
         $this->name = $name;
         $this->salary = $salary;
     }

@@ -20,5 +20,9 @@ class Rectangle extends shape {
         return $this->width * $this->height;
     }
 }
-
+$triangle = new Triangle(10, 5);
+echo "Area of the triangle: " . $triangle->calculateArea() . "\n";
+echo "<br>";
+$rectangle = new Rectangle(10, 5);
+echo "Area of the rectangle: " . $rectangle->calculateArea() . "\n";
 ?>
