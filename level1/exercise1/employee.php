@@ -1,5 +1,5 @@
 <?php
-class employee {
+class Employee {
     public string $name;
     public float $salary;
 
@@ -15,6 +15,4 @@ class employee {
         }
     }
 }
-
-
 ?>
