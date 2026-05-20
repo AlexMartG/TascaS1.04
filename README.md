@@ -1,12 +1,12 @@
 # 🐘 Task S1.04. OOP 1 — Level 1
 
-Introduction to Object-Oriented Programming in PHP: classes, objects and inheritance.
+Introduction to Object-Oriented Programming in PHP: classes, objects, inheritance and file inclusion.
 
 ---
 
 ## 📄 Description
 
-This project introduces the fundamentals of Object-Oriented Programming in PHP. The exercises cover class and object creation, instance methods, and inheritance between classes through a practical approach.
+This project introduces the fundamentals of Object-Oriented Programming in PHP. The exercises cover class and object creation, instance methods, inheritance between classes, and the use of PHP file inclusion statements to organise code across multiple files.
 
 ---
 
@@ -15,6 +15,7 @@ This project introduces the fundamentals of Object-Oriented Programming in PHP. 
 - Create and use classes and objects in PHP
 - Define attributes and methods within a class
 - Apply inheritance and composition as relationship mechanisms between classes and objects
+- Use file inclusion statements: `require`, `require_once`, `include` and `include_once`
 
 ---
 
@@ -27,8 +28,15 @@ This project introduces the fundamentals of Object-Oriented Programming in PHP. 
 ## 📁 Project structure
 
 ```
-├── exercise1.php
-├── exercise2.php
+S1.04. POO 1 Nivell 1/
+├── exercici1/
+│   ├── Employee.php
+│   └── index.php
+├── exercici2/
+│   ├── Shape.php
+│   ├── Triangle.php
+│   ├── Rectangle.php
+│   └── index.php
 └── README.md
 ```
 
@@ -39,7 +47,7 @@ This project introduces the fundamentals of Object-Oriented Programming in PHP. 
 | Exercise | Description |
 |----------|-------------|
 | **Exercise 1** | `Employee` class with `name` and `salary` attributes; method to set them and a method that prints whether the employee must pay taxes (salary above 6000) |
-| **Exercise 2** | `Shape` base class with `width` and `height`; two subclasses `Triangle` and `Rectangle` that inherit from `Shape` and each calculate their area |
+| **Exercise 2** | `Shape` base class with `width` and `height`; two subclasses `Triangle` and `Rectangle` that inherit from `Shape` and each calculate their own area |
 
 ---
 
@@ -47,7 +55,7 @@ This project introduces the fundamentals of Object-Oriented Programming in PHP. 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AlexMartG/TascaS1.04.git
+   git clone https://github.com/username/repo-name.git
    ```
 
 2. Make sure you have PHP installed:
@@ -55,9 +63,10 @@ This project introduces the fundamentals of Object-Oriented Programming in PHP. 
    php --version
    ```
 
-3. Run any exercise from the terminal:
+3. Navigate into an exercise folder and run it:
    ```bash
-   php exercise1.php
+   cd "S1.04. POO 1 Nivell 1/exercici1"
+   php index.php
    ```
 
 ---
@@ -66,11 +75,13 @@ This project introduces the fundamentals of Object-Oriented Programming in PHP. 
 
 - Understanding the difference between class attributes and method parameters, and when to use each (Exercise 1).
 - Correctly implementing inheritance so subclasses reuse the parent constructor while defining their own `area()` method (Exercise 2).
+- Choosing between `require`, `require_once`, `include` and `include_once` depending on whether the file is critical and whether it may be loaded more than once.
 
 ---
 
 ## ✅ Best practices applied
 
-- Each exercise isolated in its own file
+- Each exercise isolated in its own folder
+- Classes split into separate files and loaded with `require_once`
 - Clear separation between parent and child class responsibilities
 - Methods named descriptively to reflect their behaviour
