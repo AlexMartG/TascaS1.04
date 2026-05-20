@@ -15,10 +15,6 @@ class employee {
         }
     }
 }
-$employee = new employee();
-$employee->setEmployee("Antonio Guterres", 50000);
-echo "Employee Name: " . $employee->name . "\n";
-echo "<br>";
-$employee->checkSalary();
+
 
 ?>
