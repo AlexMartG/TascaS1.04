@@ -54,8 +54,8 @@ S1.04. POO 1 Nivell 1/
 ## 🚀 How to run the project
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/repo-name.git
+   ```bashgit
+   git clone https://github.com/AlexMartG/TascaS1.04.git
    ```
 
 2. Make sure you have PHP installed:
