@@ -29,10 +29,10 @@ This project introduces the fundamentals of Object-Oriented Programming in PHP. 
 
 ```
 S1.04. POO 1 Nivell 1/
-├── exercici1/
+├── exercise1/
 │   ├── Employee.php
 │   └── index.php
-├── exercici2/
+├── exercise2/
 │   ├── Shape.php
 │   ├── Triangle.php
 │   ├── Rectangle.php
@@ -65,7 +65,7 @@ S1.04. POO 1 Nivell 1/
 
 3. Navigate into an exercise folder and run it:
    ```bash
-   cd "S1.04. POO 1 Nivell 1/exercici1"
+   cd "S1.04. POO 1 Nivell 1/exercise1"
    php index.php
    ```
 
